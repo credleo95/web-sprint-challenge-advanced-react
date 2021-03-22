@@ -8,7 +8,7 @@ import userEvent from "@testing-library/user-event";
 test("Checkout Form Header renders", async () => {
     render(<CheckoutForm/>);
     const header = screen.getByTestId('header');
-    expect(header).toBeValid()
+    expect(header).toBeVisible()
 });
 
 test("form shows success message on submit with form details", () => {
