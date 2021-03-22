@@ -32,7 +32,7 @@ const CheckoutForm = () => {
   return (
     <>
       <form onSubmit={onSubmit}>
-        <h2>Checkout Form</h2>
+        <h2 data-testid="header">Checkout Form</h2>
         <label>
           First Name:
           <input
@@ -69,7 +69,7 @@ const CheckoutForm = () => {
           Zip:
           <input name="zip" value={zip} onChange={handleChange} />
         </label>
-        <button>Checkout</button>
+        <button data-testid='checkout'>Checkout</button>
       </form>
 
       {showSuccessMessage && (
