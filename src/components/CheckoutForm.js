@@ -1,6 +1,7 @@
 import React from "react";
 import useForm from '../hooks/useForm';
 
+// Initial value for object that represents the input fields
 const initialValue = {
   firstName: "",
   lastName: "",
@@ -10,15 +11,11 @@ const initialValue = {
   zip: "",
 };
 
-// This form should be handled by a "useForm" custom hook
-// Build out the logic needed for a form custom hook (see the useForm.js file)
-// and replace the necessary stateful logic from CheckoutForm with the hook
-
 const CheckoutForm = (props) => {
   
 
-  const [values, handleChanges, handleSubmit, showSuccessMessage] = useForm(initialValue)
-  const {firstName, lastName, city, state, zip, address } = values 
+  const [values, handleChanges, handleSubmit, showSuccessMessage] = useForm(initialValue) // Custom Hook to handle changes and Success Message
+  const {firstName, lastName, city, state, zip, address } = values // destructured values to easily type in stateful values.
   return (
     <>
       <form onSubmit={handleSubmit}>

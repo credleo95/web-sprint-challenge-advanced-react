@@ -6,7 +6,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 2. When does a componentWillMount function be called? What about a componentWillUpdate?
 
-    A componenentWillMount function is called just before mounting occurs. Then, the componentWillUpdate is called before the rendering phase. 
+    A componenentWillMount function is called just before mounting occurs. Then, the componentWillUpdate is called before the render and during the updating phase. 
 
 3. Define stateful logic.
 
