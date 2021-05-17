@@ -1,8 +1,8 @@
 import {useState } from 'react'; 
-import useLocalStorage from './useLocalStorage'; 
+// import useLocalStorage from './useLocalStorage'; 
 
-const useForm = (key, initialValues, callback ) => {
-    const [stateValues, setStateValues] = useLocalStorage(initialValues);
+const useForm = (initialValues, callback ) => {
+    const [stateValues, setStateValues] = useState(initialValues);
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
 
